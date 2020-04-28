@@ -12,5 +12,4 @@ elif mdl == 0:
     str = 'and is 0'
 elif mdl < 6:
     str = 'and is less than 6 and not 0'
-    
-    print("Last digit of {} {} {} {}".format(number, 'is', mdl, str))
+print("Last digit of {} {} {} {}".format(number, 'is', mdl, str))
