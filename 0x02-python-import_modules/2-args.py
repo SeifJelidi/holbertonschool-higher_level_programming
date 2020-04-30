@@ -12,5 +12,4 @@ if __name__ == "__main__":
         print("{}".format(len(argv) - 1) + ch)
         for i, j in enumerate(argv):
             if i != 0:
-                print("{}: {}".format(i, j)) 
-    
+                print("{}: {}".format(i, j))
