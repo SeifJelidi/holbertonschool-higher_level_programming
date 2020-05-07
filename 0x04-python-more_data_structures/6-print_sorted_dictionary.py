@@ -1,5 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 def print_sorted_dictionary(a_dictionary):
-    for x in sorted(a_dictionary):
-        print(x, end="")
-        print(":", a_dictionary[x])
+    for x, y in sorted(a_dictionary.items()):
+        print('%s: %s' %(x, y))
