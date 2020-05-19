@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''4-square: create a class Square'''
+'''5-square: create a class Square'''
 
 
 class Square:
