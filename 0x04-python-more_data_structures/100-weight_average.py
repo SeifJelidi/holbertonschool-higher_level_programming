@@ -1,11 +1,7 @@
 #!/usr/bin/python3
 def weight_average(my_list=[]):
-    if not my_list:
+    if len(my_list) is 0:
         return 0
     else:
-        sum = 0
-        for x in my_list:
-            for i in x:
-                sum = sum + i
-    res = sum / len(my_list)
-    return res
+        result1 = reduce((lambda x, y: x * y), my_list)
+        return result1
