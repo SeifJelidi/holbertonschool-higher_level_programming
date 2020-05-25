@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-'''the new class'''
+'''creation of new class'''
 
 
 class Rectangle:
-   '''the empty class '''
+    '''class rectangle'''
