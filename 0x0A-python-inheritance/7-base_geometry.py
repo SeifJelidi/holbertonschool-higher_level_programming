@@ -6,6 +6,7 @@ class BaseGeometry:
     '''the new class'''
     def area(self):
         raise Exception("area() is not implemented")
+
     def integer_validator(self, name, value):
         '''checking value'''
         if type(value) is not int:
