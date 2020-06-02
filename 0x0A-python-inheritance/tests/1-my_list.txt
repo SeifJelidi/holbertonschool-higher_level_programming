@@ -1,0 +1,20 @@
+The ``1-my_list.py`` module
+======================
+
+Using ``1-my_list.py``
+-------------------
+
+>>> MyList = __import__('1-my_list').MyList
+
+Now use it:
+
+>>> seif = MyList()
+>>> seif.append(1)
+>>> seif.append(4)
+>>> seif.append(2)
+>>> seif.append(3)
+>>> seif.append(5)
+>>> print(seif)
+[1, 4, 2, 3, 5]
+>>> seif.print_sorted()
+[1, 2, 3, 4, 5]
