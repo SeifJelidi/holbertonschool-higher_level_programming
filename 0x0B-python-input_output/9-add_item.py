@@ -2,16 +2,18 @@
 """___"""
 
 
-from sys import argv
-load_from_json_file = __import__('8-load_from_json_file').load_from_json_file
+import sys
 save_to_json_file = __import__('7-save_to_json_file').save_to_json_file
+load_from_json_file = __import__('8-load_from_json_file').load_from_json_file
 
-filename = "add_item.json"
+
+filename = 'add_item.json'
+L = []
 
 try:
-    my_list = load_from_json_file(filename)
+    L = load_from_json_file("add_item.json")
+    for argument in sys.argv[1:]:
+        L.append(argument)
+    save_to_json_file(L, filename)
 except:
-    my_list = []
-for a in range(1, len(argv)):
-    my_list.append(argv[a])
-save_to_json_file(my_list, filename)
+    save_to_json_file(L, filename)
