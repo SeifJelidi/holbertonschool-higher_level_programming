@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+'''___'''
+
+
 def read_lines(filename="", nb_lines=0):
     """read liness"""
     ligne = 0
