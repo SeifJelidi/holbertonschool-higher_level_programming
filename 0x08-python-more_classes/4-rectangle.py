@@ -51,13 +51,13 @@ class Rectangle:
 
     def __str__(self):
         '''prints the rectangle with #'''
-        rect = ""
+        strrect = ""
+        hashh = "#"
         if self.__width is 0 or self.__height is 0:
-            return rect
-        for i in range(self.__height):
-            rect = rect + str("#" * self.__height) + ("\n")
-        rect = rect[:-1]
-        return rect
+            return strrect
+        else:
+            seiif = strrect.join(hashh * self.width + '\n') * self.height
+            return seiif[:-1]
 
     def __repr__(self):
-        return "Rectangle({:d}, {:d})".format(self.width, self.height)
+         return __class__.__name__ + "("  + str(self.width) + ", " + str(self.height) + ")"
