@@ -4,7 +4,7 @@
 
 class Rectangle:
     '''width and height of the claqq'''
-    def __init__(self, width=0, height=0):
+    def __init__(self, width, height):
         '''/'''
         self.width = width
         self.height = height
@@ -51,10 +51,13 @@ class Rectangle:
 
     def __str__(self):
         '''prints the rectangle with #'''
-        strrect = ""
-        hashh = "#"
+        rect = ""
         if self.__width is 0 or self.__height is 0:
-            return strrect
-        else:
-            seiif = strrect.join(hashh * self.width + '\n') *self.height
-            return seiif[:-1]
+            return rect
+        for i in range(self.__height):
+            rect = rect + str("#" * self.__height) + ("\n")
+        rect = rect[:-1]
+        return rect
+
+    def __repr__(self):
+        return "Rectangle({:d}, {:d})".format(self.width, self.height)
