@@ -60,8 +60,9 @@ class Rectangle:
             return seiif[:-1]
 
     def __repr__(self):
-        return __class__.__name__ + "(" + str(self.width)
-        + ", " + str(self.height) + ")"
+        myw = str(self.width)
+        myh = str(self.height)
+        return "Rectangle" + "(" + myw + ", " + myh + ")"
 
     def __del__(self):
         """ delete rectangle"""
