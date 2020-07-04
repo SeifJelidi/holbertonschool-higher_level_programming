@@ -65,5 +65,4 @@ class Rectangle:
         return "Rectangle" + "(" + myw + ", " + myh + ")"
 
     def __del__(self):
-        """ delete rectangle"""
         print ('Bye rectangle...')
