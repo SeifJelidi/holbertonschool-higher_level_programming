@@ -56,5 +56,5 @@ class Rectangle:
         if self.__width is 0 or self.__height is 0:
             return strrect
         else:
-            seiif = strrect.join(hashh * self.width + '\n') *self.height
+            seiif = strrect.join(hashh * self.width + '\n') * self.height
             return seiif[:-1]
