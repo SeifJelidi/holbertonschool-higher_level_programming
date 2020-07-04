@@ -60,4 +60,5 @@ class Rectangle:
             return seiif[:-1]
 
     def __repr__(self):
-         return __class__.__name__ + "("  + str(self.width) + ", " + str(self.height) + ")"
+        return __class__.__name__ + "(" + str(self.width)
+        + ", " + str(self.height) + ")"
