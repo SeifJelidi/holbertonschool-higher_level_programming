@@ -4,11 +4,12 @@ ____
 """
 import urllib.request
 import urllib.error
-import sys
+from sys import argv
 if __name__ == "__main__":
+    url = argv[1]
+    req = (url)
     try:
-        with request.urlopen(argv[1]) as rps:
-            html5 = rps.read()
-            print(html5.decode("utf-8"))
-    except error.HTTPError as x:
+        with urlopen(req) as response:
+            print(response.read().decode('utf-8'))
+    except HTTPError as x:
         print("Error code: {}".format(x.code))
