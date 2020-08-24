@@ -2,7 +2,7 @@
 """
 ____
 """
-import requests
+import urlib.request
 import urllib.error
 from sys import argv
 if __name__ == "__main__":
