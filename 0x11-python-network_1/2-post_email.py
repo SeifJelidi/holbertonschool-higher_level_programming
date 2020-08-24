@@ -2,7 +2,7 @@
 """
 displays X-Request-id's value
 """
-import urllib.requests
+import urllib.request
 import urllib.parse
 from sys import argv
 if __name__ == "__main__":
